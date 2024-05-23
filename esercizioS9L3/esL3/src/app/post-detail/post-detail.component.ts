@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { PostInterface } from '../../interfaces/post.interface';
 
 @Component({
   selector: 'app-post-detail',
   templateUrl: './post-detail.component.html',
-  styleUrl: './post-detail.component.scss'
+  styleUrls: ['./post-detail.component.scss'],
 })
-export class PostDetailComponent {
+export class PostDetailComponent implements OnInit {
+  post!: PostInterface
+  constructor() {
 
+  }
+  ngOnInit(): void {
+
+  }
 }
